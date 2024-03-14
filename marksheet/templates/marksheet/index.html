@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marsheet</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <label>course 1</label>
+        {{form.course1}}
+        <br>
+        <label>course 2</label>
+        {{form.course2}}
+        <br>
+        <label>course 3</label>
+        {{form.course3}}
+        <br>
+        <label>course 4</label>
+        {{form.course4}}
+        <br>
+        <label>course 5</label>
+        {{form.course5}}
+        <br>
+        <button type="submit">Calculate</button>
+        <br>
+        <label>Total</label>
+        <input type="text" value="{{total}}">
+        <br>
+        <label>Percentage</label>
+        <input type="text" value="{{percentage}}">
+        <br>
+        <label>Division</label>
+        <input type="text" value="{{Division}}">
+    </form>
+</body>
+</html>
